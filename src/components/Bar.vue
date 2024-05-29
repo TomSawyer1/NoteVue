@@ -23,12 +23,16 @@ export default {
   components: {
     Createnote
   },
+  // Déclaration des props reçues par ce composant
   props: {
+    // La prop 'notes' est un tableau qui est requis
     notes: {
       type: Array,
       required: true
     }
   },
+
+  // emit est un event
   methods: {
     createNote() {
       this.$emit('createNote');

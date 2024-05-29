@@ -15,6 +15,7 @@ export default {
   },
   methods: {
     selectNote() {
+      // émet est un evenement vers le composant
       this.$emit('selectNote', this.note);
     },
     formatDate(date) {

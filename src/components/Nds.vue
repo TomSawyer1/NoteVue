@@ -13,7 +13,7 @@
 
       
       <p class="note-meta">Created: {{ formatDate(note.created) }}</p>
-      <p class="note-meta">Last updated: {{ formatDate(note.updated) }}</p>
+      <p class="note-meta">Updated: {{ formatDate(note.updated) }}</p>
       <div class="buttons">
 
         <button @click="saveNote" class="save-note">Save</button>
