@@ -1,15 +1,13 @@
 
-import Home from '../views/Home.vue'
-import NoteDetails from '../components/NoteDetails.vue'
-import { createWebHistory, createRouter } from 'vue-router'
+import Home from '../views/Home.vue';
+
+import { createRouter, createWebHistory } from 'vue-router';
+
 const routes = [
-  { path: "/", component: Home }
-  ,
-  {
-    path: '/note/:id',
-    name: 'NoteDetails',
-    component: NoteDetails
-  }
+  { path: '/', component: Home },
+  { path: '/note/:id', component: Home }
 ];
 
-const router = createRouter({   history: createWebHistory(),   routes });  export default router;
+const router = createRouter({ history: createWebHistory (), routes });
+
+export default router;
